@@ -147,16 +147,102 @@ And with any luck, you should see that the installation was successful.
 ## Xcode Command Line Tools
 
 ::: {.notes}
-Depending on your version of macOS, you may or may not already have [Git](https://git-scm.com/install/mac) installed. The reason for this is it is included within the Xcode Command Line Tools. 
+Depending on your version of macOS, you may or may not already have [Git](https://git-scm.com/install/mac) installed on your computer. The reason is that it comes bundled within the Xcode Command Line Tools. 
 
-Often, when opening Positron for the first time, you will have a popup along the lines of "Git requires command line developer tools. Would you like to install the tools now?". If you encounter this, select Install. In addition to installing Git, these command line developer tools will also install the the equivalent of the Rtools for Windows, so you will need these tools regardless.
-
-Unfortunately, I had already installed these previously on my Mac, so I was not able to get the necessary screenshots for this documentation. If you encounter this popup on your installation, please take screen shots of each step, and [reach out](https://github.com/UMGCCCFCSR/CytometryInR/issues/4) so that I can appropiately update this documentation. 
-
-In case the popup doesn't trigger, and you need to install Xcode Command Line Tools yourself, please see these [instructions](https://clanfear.github.io/CSSS508/docs/compiling.html)
+If this is not your first foray into coding, you may have previously seen an installation pop-up along the lines of "XYZ requires command line developer tools. Would you like to install the tools now?" when installing an IDE (like Positron, Rstudio or Visual Studio Code). 
 :::
 
-![](/course/00_WorkstationSetup/images/MacOS/CommandLineTools.png){width=100%}
+![](images/MacOS/00_Popup.png)
+
+<br>
+
+---
+
+::: {.notes}
+Since these command line developer tools contain both Git, and also the equivalent of Rtools for Windows, we will need to install them for this course.  To get started, first open your terminal. 
+:::
+
+![](images/MacOS/00_1OpenTerminal.png)
+
+<br>
+
+---
+
+::: {.notes}
+Next run the following code:
+:::
+
+```{r}
+#| eval: FALSE
+xcode-select --install
+```
+
+![](images/MacOS/00_2XcodeInstall.png)
+
+<br>
+
+---
+
+::: {.notes}
+You will then have the pop-up asking whether you want to install the command line tools (which contain Git). Select Install. 
+:::
+
+![](images/MacOS/00_3CommandLineDeveloperTools.png)
+
+<br>
+
+---
+
+::: {.notes}
+You will then be asked to accept the license
+:::
+
+![](images/MacOS/00_4License.png)
+
+<br>
+
+---
+
+::: {.notes}
+Your installation will then proceed
+:::
+
+![](images/MacOS/00_5InstallProgress.png)
+
+<br>
+
+---
+
+::: {.notes}
+And if all goes well, the software will finish installing. 
+:::
+
+![](images/MacOS/00_6Success.png)
+
+
+<br>
+
+---
+
+::: {.notes}
+After you complete Positron installation (next section), if you check the version control tab on the action bar on the far left side of the screen, you should see the following if Git was installed correctly. 
+:::
+
+![](images/MacOS/00_7Success.png)
+
+<br>
+
+---
+
+::: {.notes}
+Alternatively, if you see this, you will need to reattempt the installation. 
+:::
+
+![](images/MacOS/00_8Unsuccess.png)
+
+<br>
+
+---
 
 ## Install Positron
 

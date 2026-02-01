@@ -370,10 +370,8 @@ David Rach
 <section id="xcode-command-line-tools" class="slide level2">
 <h2>Xcode Command Line Tools</h2>
 <aside class="notes">
-<p>Depending on your version of macOS, you may or may not already have <a href="https://git-scm.com/install/mac">Git</a> installed. The reason for this is it is included within the Xcode Command Line Tools.</p>
-<p>Often, when opening Positron for the first time, you will have a popup along the lines of “Git requires command line developer tools. Would you like to install the tools now?”. If you encounter this, select Install. In addition to installing Git, these command line developer tools will also install the the equivalent of the Rtools for Windows, so you will need these tools regardless.</p>
-<p>Unfortunately, I had already installed these previously on my Mac, so I was not able to get the necessary screenshots for this documentation. If you encounter this popup on your installation, please take screen shots of each step, and <a href="https://github.com/UMGCCCFCSR/CytometryInR/issues/4">reach out</a> so that I can appropiately update this documentation.</p>
-<p>In case the popup doesn’t trigger, and you need to install Xcode Command Line Tools yourself, please see these <a href="https://clanfear.github.io/CSSS508/docs/compiling.html">instructions</a></p>
+<p>Depending on your version of macOS, you may or may not already have <a href="https://git-scm.com/install/mac">Git</a> installed on your computer. The reason is that it comes bundled within the Xcode Command Line Tools.</p>
+<p>If this is not your first foray into coding, you may have previously seen an installation pop-up along the lines of “XYZ requires command line developer tools. Would you like to install the tools now?” when installing an IDE (like Positron, Rstudio or Visual Studio Code).</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -386,7 +384,152 @@ David Rach
           display:block!important;
       }</style></aside>
 
-<img data-src="../../course/00_WorkstationSetup/images/MacOS/CommandLineTools.png" style="width:100.0%" class="r-stretch"></section>
+<img data-src="images/MacOS/00_Popup.png" class="r-stretch"><p><br></p>
+</section>
+<section class="slide level2">
+
+<aside class="notes">
+<p>Since these command line developer tools contain both Git, and also the equivalent of Rtools for Windows, we will need to install them for this course. To get started, first open your terminal.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/MacOS/00_1OpenTerminal.png" class="r-stretch"><p><br></p>
+</section>
+<section class="slide level2">
+
+<aside class="notes">
+<p>Next run the following code:</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/MacOS/00_2XcodeInstall.png" class="r-stretch"><p><br></p>
+</section>
+<section class="slide level2">
+
+<aside class="notes">
+<p>You will then have the pop-up asking whether you want to install the command line tools (which contain Git). Select Install.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/MacOS/00_3CommandLineDeveloperTools.png" class="r-stretch"><p><br></p>
+</section>
+<section class="slide level2">
+
+<aside class="notes">
+<p>You will then be asked to accept the license</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/MacOS/00_4License.png" class="r-stretch"><p><br></p>
+</section>
+<section class="slide level2">
+
+<aside class="notes">
+<p>Your installation will then proceed</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/MacOS/00_5InstallProgress.png" class="r-stretch"><p><br></p>
+</section>
+<section class="slide level2">
+
+<aside class="notes">
+<p>And if all goes well, the software will finish installing.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/MacOS/00_6Success.png" class="r-stretch"><p><br></p>
+</section>
+<section class="slide level2">
+
+<aside class="notes">
+<p>After you complete Positron installation (next section), if you check the version control tab on the action bar on the far left side of the screen, you should see the following if Git was installed correctly.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/MacOS/00_7Success.png" class="r-stretch"><p><br></p>
+</section>
+<section class="slide level2">
+
+<aside class="notes">
+<p>Alternatively, if you see this, you will need to reattempt the installation.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+<img data-src="images/MacOS/00_8Unsuccess.png" class="r-stretch"><p><br></p>
+</section>
 <section id="install-positron" class="slide level2">
 <h2>Install Positron</h2>
 <aside class="notes">
@@ -1025,6 +1168,44 @@ David Rach
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

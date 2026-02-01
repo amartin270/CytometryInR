@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -350,11 +385,46 @@ gtag('config', 'G-LZ35J3XE4D', { 'anonymize_ip': true});
 </section>
 <section id="xcode-command-line-tools" class="level2">
 <h2 class="anchored" data-anchor-id="xcode-command-line-tools">Xcode Command Line Tools</h2>
-<p>Depending on your version of macOS, you may or may not already have <a href="https://git-scm.com/install/mac">Git</a> installed. The reason for this is it is included within the Xcode Command Line Tools.</p>
-<p>Often, when opening Positron for the first time, you will have a popup along the lines of “Git requires command line developer tools. Would you like to install the tools now?”. If you encounter this, select Install. In addition to installing Git, these command line developer tools will also install the the equivalent of the Rtools for Windows, so you will need these tools regardless.</p>
-<p>Unfortunately, I had already installed these previously on my Mac, so I was not able to get the necessary screenshots for this documentation. If you encounter this popup on your installation, please take screen shots of each step, and <a href="https://github.com/UMGCCCFCSR/CytometryInR/issues/4">reach out</a> so that I can appropiately update this documentation.</p>
-<p>In case the popup doesn’t trigger, and you need to install Xcode Command Line Tools yourself, please see these <a href="https://clanfear.github.io/CSSS508/docs/compiling.html">instructions</a></p>
-<p><img src="../../course/00_WorkstationSetup/images/MacOS/CommandLineTools.png" class="img-fluid" style="width:100.0%"></p>
+<p>Depending on your version of macOS, you may or may not already have <a href="https://git-scm.com/install/mac">Git</a> installed on your computer. The reason is that it comes bundled within the Xcode Command Line Tools.</p>
+<p>If this is not your first foray into coding, you may have previously seen an installation pop-up along the lines of “XYZ requires command line developer tools. Would you like to install the tools now?” when installing an IDE (like Positron, Rstudio or Visual Studio Code).</p>
+<p><img src="images/MacOS/00_Popup.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<p>Since these command line developer tools contain both Git, and also the equivalent of Rtools for Windows, we will need to install them for this course. To get started, first open your terminal.</p>
+<p><img src="images/MacOS/00_1OpenTerminal.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<p>Next run the following code:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>xcode<span class="sc">-</span>select <span class="sc">--</span>install</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img src="images/MacOS/00_2XcodeInstall.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<p>You will then have the pop-up asking whether you want to install the command line tools (which contain Git). Select Install.</p>
+<p><img src="images/MacOS/00_3CommandLineDeveloperTools.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<p>You will then be asked to accept the license</p>
+<p><img src="images/MacOS/00_4License.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<p>Your installation will then proceed</p>
+<p><img src="images/MacOS/00_5InstallProgress.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<p>And if all goes well, the software will finish installing.</p>
+<p><img src="images/MacOS/00_6Success.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<p>After you complete Positron installation (next section), if you check the version control tab on the action bar on the far left side of the screen, you should see the following if Git was installed correctly.</p>
+<p><img src="images/MacOS/00_7Success.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
+<p>Alternatively, if you see this, you will need to reattempt the installation.</p>
+<p><img src="images/MacOS/00_8Unsuccess.png" class="img-fluid"></p>
+<p><br></p>
+<hr>
 </section>
 <section id="install-positron" class="level2">
 <h2 class="anchored" data-anchor-id="install-positron">Install Positron</h2>
